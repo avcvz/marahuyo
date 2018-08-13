@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
-  outline: 1px solid red;
+.blog-post {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 /*media queries*/
@@ -18,11 +19,10 @@ body {
 
   header h1 {
     font-family: "Josefin Sans", Georgia, sans-serif;
-    font-size: 3.4rem;
   }
   header marquee {
     font-family: "Cinzel", serif;
-    font-size: 1.2rem;
+    font-size: 3vh;
   }
 
   .blog-post {
@@ -34,6 +34,11 @@ body {
 /*Small devices (landscape phones, 576px and up)*/
 /*Medium devices (tablets, 768px and up)*/
 /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .marahuyo-header {
+    margin-top: 3.6vh;
+  }
+}
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   .marahuyo-header {
@@ -46,20 +51,13 @@ body {
   }
   header marquee {
     font-family: "Cinzel", serif;
-    font-size: 2.5rem;
+    font-size: 3vh;
   }
 
   .blog-post {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 1vh;
-  }
-  .blog-post .date-post {
-    font-size: 1.2rem;
-  }
-  .blog-post .title-post {
-    font-size: 2rem;
   }
 }
 

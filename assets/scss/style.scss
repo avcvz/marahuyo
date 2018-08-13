@@ -3,12 +3,13 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; // outline: 1px solid red;
 }
 
-body {
-  overflow: hidden;
-  outline: 1px solid red;
+.blog-post {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 /*media queries*/
@@ -22,11 +23,10 @@ body {
   header {
     h1 {
       font-family: $logo-font;
-      font-size: 3.4rem;
     }
     marquee {
       font-family: $text-font;
-      font-size: 1.2rem;
+      font-size: 3vh;
     }
   }
   .blog-post {
@@ -46,7 +46,11 @@ body {
 
 /*Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .marahuyo-header {
+    margin-top: 3.6vh;
+  }
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
@@ -61,19 +65,12 @@ body {
     }
     marquee {
       font-family: $text-font;
-      font-size: 2.5rem;
+      font-size: 3vh;
     }
   }
   .blog-post {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 1vh;
-    .date-post {
-      font-size: 1.2rem;
-    }
-    .title-post {
-      font-size: 2rem;
-    }
   }
 }

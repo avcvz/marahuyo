@@ -3,13 +3,12 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; // outline: 1px solid red;
+  box-sizing: border-box;
 }
 
-.blog-post {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+body {
+  overflow: hidden;
+  outline: 1px solid red;
 }
 
 /*media queries*/
@@ -23,10 +22,11 @@
   header {
     h1 {
       font-family: $logo-font;
+      font-size: 3.4rem;
     }
     marquee {
       font-family: $text-font;
-      font-size: 3vh;
+      font-size: 1.2rem;
     }
   }
   .blog-post {
@@ -46,11 +46,7 @@
 
 /*Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .marahuyo-header {
-    margin-top: 3.6vh;
-  }
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
@@ -65,12 +61,19 @@
     }
     marquee {
       font-family: $text-font;
-      font-size: 3vh;
+      font-size: 2.5rem;
     }
   }
   .blog-post {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-top: 1vh;
+    .date-post {
+      font-size: 1.2rem;
+    }
+    .title-post {
+      font-size: 2rem;
+    }
   }
 }

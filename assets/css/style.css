@@ -189,7 +189,7 @@ input:checked + .slider:before {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   .marahuyo-header {
-    margin-top: 5vh;
+    margin-top: 3vh;
   }
 
   .marahuyo-logo {

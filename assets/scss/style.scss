@@ -6,10 +6,6 @@
   box-sizing: border-box; // outline: 1px solid red;
 }
 
-body {
-  background-color: $theme-color !important;
-}
-
 .navbar-color {
   background-color: $secondary-color;
   color: $theme-color;
@@ -17,7 +13,8 @@ body {
 
 li {
   a {
-    color: $theme-color !important;
+    color: $theme-color;
+    font-family: $logo-font;
   }
 }
 
@@ -66,6 +63,135 @@ li {
   border-color: $secondary-color;
 }
 
+/////TESTING////
+body.dark-mode {
+  background-color: $theme-color;
+  .navbar-color {
+    background-color: $secondary-color;
+    color: $theme-color;
+  }
+  li {
+    a {
+      color: $theme-color;
+      font-family: $logo-font;
+    }
+  }
+  .marahuyo-logo {
+    color: $secondary-color
+  }
+  .header-divider {
+    border-color: red;
+  }
+  .date-post {
+    color: $text-color;
+  }
+  .title-post {
+    color: $text-color;
+  }
+  .blogpost-divider {
+    border-color: $secondary-color;
+  }
+}
+
+body.light-mode {
+  background-color: $light-color;
+  .navbar-color {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+  li {
+    a {
+      color: $dark-color;
+      font-family: $logo-font;
+    }
+  }
+  .marahuyo-logo {
+    color: $dark-color;
+  }
+  .header-divider {
+    border-color: $dark-color;
+  }
+  .date-post {
+    color: $text-color;
+  }
+  .title-post {
+    color: $text-color;
+  }
+  .blogpost-divider {
+    border-color: $dark-color;
+  }
+  .slider:before {
+    background-color: $light-color;
+  }
+}
+
+////END TESTING///
+////TESTING 2 SWITCH////
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $secondary-color;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: $theme-color;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: $dark-color;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px $light-color;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+////END TESTING 2////
+.color-switch {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*media queries*/
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -80,7 +206,7 @@ li {
   }
   .marahuyo-tagline {
     font-family: $text-font;
-    font-size: 1.5em;
+    font-size: 1.2em;
   } ////BLOG POST////
   .blog-post {
     display: flex;

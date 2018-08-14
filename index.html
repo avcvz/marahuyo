@@ -16,40 +16,17 @@
   <title>MARAHUYO</title>
 </head>
 
-<body>
-
-  <!-- <nav class="navbar-color navbar navbar-expand-sm navbar-dark ">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class=" navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item dropup">
-          <a class="nav-link dropdown-toggle" href="https://getbootstrap.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Dropup</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown10">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
+<body id="body" class="dark-mode">
 
   <main class="container-fluid">
+
+    <!-- DESKTOP -->
+    <div class="color-switch mt-3">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"></span>
+      </label>
+    </div>
     <header class="col-12 marahuyo-header text-center">
       <h1 class="marahuyo-logo">MaRaHUyO</h1>
       <!-- <h5>Isang lugar kung saan may kalayaan kang ipahayag ang gusto mong sabihin katotohanan man o kalokohan.</h5> -->
@@ -77,24 +54,23 @@
   </main>
 
   <nav class="row fixed-bottom navbar-color d-block d-sm-none">
-    <ul class="nav  col-12 text-center px-0 navigation rounded-bottom">
-      <li class="naviLink nav-item border  col-4">
-        <a class="insideLink nav-link" href="index.php">Who</a>
+    <ul class="nav  col-12 text-center  ">
+      <li class=" nav-item border  col-4">
+        <a class=" nav-link" href="#">Who</a>
       </li>
 
 
       <li class="naviLink nav-item  border  col-4">
-        <a class="insideLink nav-link" href="about.php">What</a>
+        <a class=" nav-link" href="#">What</a>
       </li>
 
 
       <li class="naviLink nav-item border  col-4">
-        <a class="insideLink nav-link" href="journal.php">When</a>
+        <a class=" nav-link" href="#">When</a>
       </li>
     </ul>
-
-
   </nav>
+  <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
 
 
 
@@ -111,8 +87,13 @@
 
 
 
-
-
+  <script>
+    function toggleDarkLight() {
+      var body = document.getElementById("body");
+      var currentClass = body.className;
+      body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

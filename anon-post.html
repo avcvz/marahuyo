@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#43DDE2">
+  <link rel="icon" href="assets/img/maharuyo.png" type="image/png" sizes="36x36">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Josefin+Sans|Marcellus|Montserrat" rel="stylesheet">
+
+  <!-- ///// Bootstrap BACK UP ///// -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+  <title>Maharuyo</title>
+</head>
+
+<body id="body" class="light-mode">
+  <nav class="container-fluid mb-3">
+    <header class="row marahuyo-header">
+      <a class="col-7 " href="index.html">
+        <img src="/assets/img/maharuyo-anon-post.svg" alt="">
+      </a>
+      <div class="col-5 color-switch">
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round" name="neon_light" onclick="toggleNeonLight()" title="Toggle neon/light mode"></span>
+        </label>
+      </div>
+    </header>
+  </nav>
+  <main>
+
+    <img class="img-fluid" src="http://placekitten.com/1500/1000" alt="">
+    <article class="anon-post container-fluid">
+      <br>
+      <h2 class="title-post-anon">Papano ba magdesign para sa Web?</h2>
+      <p>This dinner was given in a house on Calle Anloague, and although we do not remember the number we will describe it
+        in such a way that it may still be recognized, provided the earthquakes have not destroyed it.</p>
+      <p>We do not believe that its owner has had it torn down, for such labors are generally entrusted to God or nature—which
+        Powers hold the contracts also for many of the projects of our government.
+      </p>
+
+      <p>It is a rather large building, in the style of many in the country, and fronts upon the arm of the Pasig which is known
+        to some as the Binondo River, and which, like all the streams in Manila, plays the varied rôles of bath, sewer, laundry,
+        fishery, means of transportation and communication, and even drinking water if the Chinese water-carrier finds it
+        convenient. </p>
+    </article>
+  </main>
+
+  <nav class="row fixed-bottom navbar-color d-block d-sm-none">
+    <ul class="nav  col-12 text-center  ">
+      <li class=" nav-item border  col-4">
+        <a class=" nav-link" href="#">Magsulat</a>
+      </li>
+
+
+      <li class="naviLink nav-item  border  col-4">
+        <a class=" nav-link" href="#">Sumulat</a>
+      </li>
+
+
+      <li class="naviLink nav-item border  col-4">
+        <a class=" nav-link" href="#">Write?</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <script>
+    function toggleNeonLight() {
+      var body = document.getElementById("body");
+      var currentClass = body.className;
+      body.className = currentClass == "light-mode" ? "neon-mode" : "light-mode";
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!--/////Bootstrap JS BACKUP ////-->
+  <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>

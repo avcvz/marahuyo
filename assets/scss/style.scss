@@ -6,6 +6,10 @@
   box-sizing: border-box; // outline: 1px solid red;
 }
 
+p {
+  font-family: $text-font;
+}
+
 .navbar-color {
   background-color: $secondary-color;
   color: $theme-color;
@@ -30,7 +34,7 @@ li {
 }
 
 .marahuyo-tagline {
-  font-family: $text-font;
+  font-family: 'Cinzel';
   font-size: 3vh;
 }
 
@@ -54,7 +58,7 @@ li {
 .title-post {
   font-size: 2.5em;
   margin-bottom: 50px;
-  font-family: $headline-font;
+  font-family: $text-font;
   color: $text-color;
 }
 
@@ -63,7 +67,7 @@ li {
   border-color: $secondary-color;
 }
 
-/////TESTING////
+/////TESTING Switch color////
 body.neon-mode {
   background-color: $theme-color;
   .navbar-color {
@@ -196,6 +200,7 @@ input:checked+.slider:before {
   justify-content: flex-end;
 }
 
+/////ANON POST PAGE////
 /*media queries*/
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -209,7 +214,7 @@ input:checked+.slider:before {
     font-size: 2.6em;
   }
   .marahuyo-tagline {
-    font-family: $text-font;
+    font-family: 'Cinzel';
     font-size: 1.2em;
   } ////BLOG POST////
   .blog-post {
@@ -220,11 +225,24 @@ input:checked+.slider:before {
     margin-bottom: 30px;
   }
   .date-post {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .title-post {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 20px;
+    font-family: $text-font;
+  } /////ANON POST PAGE////
+  .marahuyologo-anonpost {
+    font-family: $logo-font;
+    font-size: 2em;
+  }
+  .anon-post {
+    margin-top: 10px;
+  }
+  .title-post-anon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: $headline-font;
   }
 }
 

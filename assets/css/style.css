@@ -62,26 +62,33 @@ li a {
 body.neon-mode {
   background-color: #F9F940;
 }
+
 body.neon-mode .navbar-color {
   background-color: #F50CA0;
   color: #F9F940;
 }
+
 body.neon-mode li a {
   color: #F9F940;
   font-family: "Josefin Sans", Georgia, sans-serif;
 }
+
 body.neon-mode .marahuyo-logo {
   color: #F50CA0;
 }
+
 body.neon-mode .header-divider {
   border-color: red;
 }
+
 body.neon-mode .date-post {
   color: #3e4140;
 }
+
 body.neon-mode .title-post {
   color: #3e4140;
 }
+
 body.neon-mode .blogpost-divider {
   border-color: #F50CA0;
 }
@@ -89,35 +96,44 @@ body.neon-mode .blogpost-divider {
 body.light-mode {
   background-color: #fff;
 }
+
 body.light-mode .navbar-color {
   background-color: #fff;
   color: #111;
 }
+
 body.light-mode li a {
   color: #111;
   font-family: "Josefin Sans", Georgia, sans-serif;
 }
+
 body.light-mode .marahuyo-logo {
   color: #111;
   text-transform: lowercase;
 }
+
 @media (max-width: 575.98px) {
   body.light-mode .marahuyo-logo {
     font-size: 4em;
   }
 }
+
 body.light-mode .header-divider {
   border-color: #111;
 }
+
 body.light-mode .date-post {
   color: #3e4140;
 }
+
 body.light-mode .title-post {
   color: #3e4140;
 }
+
 body.light-mode .blogpost-divider {
   border-color: #111;
 }
+
 body.light-mode .slider:before {
   background-color: #fff;
 }
@@ -157,21 +173,22 @@ body.light-mode .slider:before {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #111;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #fff;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
 /* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
@@ -186,22 +203,21 @@ input:checked + .slider:before {
 }
 
 /*media queries*/
+
 /*Extra small devices (portrait phones, less than 576px)*/
+
 @media (max-width: 575.98px) {
   .marahuyo-header {
     margin-top: 3vh;
   }
-
   .marahuyo-logo {
     font-family: "Josefin Sans", Georgia, sans-serif;
     font-size: 2.6em;
   }
-
   .marahuyo-tagline {
     font-family: "Cinzel", serif;
     font-size: 1.2em;
   }
-
   .blog-post {
     display: flex;
     flex-flow: column wrap;
@@ -209,24 +225,27 @@ input:checked + .slider:before {
     margin-top: 20px;
     margin-bottom: 30px;
   }
-
   .date-post {
     font-size: 1.2em;
   }
-
   .title-post {
     font-size: 1.5em;
     margin-bottom: 20px;
   }
 }
+
 /*Small devices (landscape phones, 576px and up)*/
+
 /*Medium devices (tablets, 768px and up)*/
+
 /*Large devices (desktops, 992px and up)*/
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .marahuyo-header {
     margin-top: 3.6vh;
   }
 }
+
 /*Extra large devices (large desktops, 1200px and up)*/
 
 /*# sourceMappingURL=style.css.map */

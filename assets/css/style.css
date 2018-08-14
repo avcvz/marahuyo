@@ -8,6 +8,15 @@ body {
   background-color: #F9F940 !important;
 }
 
+.navbar-color {
+  background-color: #F50CA0;
+  color: #F9F940;
+}
+
+li a {
+  color: #F9F940 !important;
+}
+
 .marahuyo-header {
   margin-top: 3.7vh;
 }

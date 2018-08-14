@@ -10,6 +10,17 @@ body {
   background-color: $theme-color !important;
 }
 
+.navbar-color {
+  background-color: $secondary-color;
+  color: $theme-color;
+}
+
+li {
+  a {
+    color: $theme-color !important;
+  }
+}
+
 ////HOME PAGE////
 .marahuyo-header {
   margin-top: 3.7vh;
@@ -29,9 +40,7 @@ body {
 .header-divider {
   border-color: red;
   border-width: 1.9px;
-}
-
-////BLOG POST////
+} ////BLOG POST////
 .blog-post {
   display: flex;
   flex-flow: row wrap;

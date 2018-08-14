@@ -107,6 +107,10 @@ body.light-mode {
   }
   .marahuyo-logo {
     color: $dark-color;
+    text-transform: lowercase;
+    @media (max-width: 575.98px) {
+      font-size: 4em;
+    }
   }
   .header-divider {
     border-color: $dark-color;

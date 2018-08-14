@@ -99,6 +99,12 @@ body.light-mode li a {
 }
 body.light-mode .marahuyo-logo {
   color: #111;
+  text-transform: lowercase;
+}
+@media (max-width: 575.98px) {
+  body.light-mode .marahuyo-logo {
+    font-size: 4em;
+  }
 }
 body.light-mode .header-divider {
   border-color: #111;

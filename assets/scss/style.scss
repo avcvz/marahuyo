@@ -6,10 +6,55 @@
   box-sizing: border-box; // outline: 1px solid red;
 }
 
+body {
+  background-color: $theme-color !important;
+}
+
+////HOME PAGE////
+.marahuyo-header {
+  margin-top: 3.7vh;
+}
+
+.marahuyo-logo {
+  font-family: $logo-font;
+  font-size: 8rem;
+  color: $secondary-color
+}
+
+.marahuyo-tagline {
+  font-family: $text-font;
+  font-size: 3vh;
+}
+
+.header-divider {
+  border-color: red;
+  border-width: 1.9px;
+}
+
+////BLOG POST////
 .blog-post {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.date-post {
+  font-size: 2em;
+  color: $text-color;
+}
+
+.title-post {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  font-family: $headline-font;
+  color: $text-color;
+}
+
+.blogpost-divider {
+  border-width: 1px;
+  border-color: $secondary-color;
 }
 
 /*media queries*/
@@ -18,21 +63,29 @@
 
 @media (max-width: 575.98px) {
   .marahuyo-header {
-    margin-top: 3vh;
+    margin-top: 5vh;
   }
-  header {
-    h1 {
-      font-family: $logo-font;
-    }
-    marquee {
-      font-family: $text-font;
-      font-size: 3vh;
-    }
+  .marahuyo-logo {
+    font-family: $logo-font;
+    font-size: 3em;
   }
+  .marahuyo-tagline {
+    font-family: $text-font;
+    font-size: 1.5em;
+  } ////BLOG POST////
   .blog-post {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .date-post {
+    font-size: 1.2em;
+  }
+  .title-post {
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
 }
 
@@ -54,23 +107,4 @@
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {
-  .marahuyo-header {
-    margin-top: 3.7vh;
-  }
-  header {
-    h1 {
-      font-family: $logo-font;
-      font-size: 8rem;
-    }
-    marquee {
-      font-family: $text-font;
-      font-size: 3vh;
-    }
-  }
-  .blog-post {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-}
+@media (min-width: 1200px) {}

@@ -4,31 +4,87 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F9F940 !important;
+}
+
+.marahuyo-header {
+  margin-top: 3.7vh;
+}
+
+.marahuyo-logo {
+  font-family: "Josefin Sans", Georgia, sans-serif;
+  font-size: 8rem;
+  color: #F50CA0;
+}
+
+.marahuyo-tagline {
+  font-family: "Cinzel", serif;
+  font-size: 3vh;
+}
+
+.header-divider {
+  border-color: red;
+  border-width: 1.9px;
+}
+
 .blog-post {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.date-post {
+  font-size: 2em;
+  color: #3e4140;
+}
+
+.title-post {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  font-family: "Palatino Linotype", "Time New Roman", serif;
+  color: #3e4140;
+}
+
+.blogpost-divider {
+  border-width: 1px;
+  border-color: #F50CA0;
 }
 
 /*media queries*/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   .marahuyo-header {
-    margin-top: 3vh;
+    margin-top: 5vh;
   }
 
-  header h1 {
+  .marahuyo-logo {
     font-family: "Josefin Sans", Georgia, sans-serif;
+    font-size: 3em;
   }
-  header marquee {
+
+  .marahuyo-tagline {
     font-family: "Cinzel", serif;
-    font-size: 3vh;
+    font-size: 1.5em;
   }
 
   .blog-post {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .date-post {
+    font-size: 1.2em;
+  }
+
+  .title-post {
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
@@ -40,25 +96,5 @@
   }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  .marahuyo-header {
-    margin-top: 3.7vh;
-  }
-
-  header h1 {
-    font-family: "Josefin Sans", Georgia, sans-serif;
-    font-size: 8rem;
-  }
-  header marquee {
-    font-family: "Cinzel", serif;
-    font-size: 3vh;
-  }
-
-  .blog-post {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

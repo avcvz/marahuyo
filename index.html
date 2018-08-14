@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#F50CA0">
+  <link rel="icon" href="assets/img/maharuyo.png" type="image/png" sizes="36x36">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
@@ -13,10 +14,10 @@
 
   <!-- ///// Bootstrap BACK UP ///// -->
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
-  <title>MARAHUYO</title>
+  <title>Maharuyo</title>
 </head>
 
-<body id="body" class="dark-mode">
+<body id="body" class="neon-mode">
 
   <main class="container-fluid">
 
@@ -24,30 +25,41 @@
     <div class="color-switch mt-3">
       <label class="switch">
         <input type="checkbox">
-        <span class="slider round" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"></span>
+        <span class="slider round" name="neon_light" onclick="toggleNeonLight()" title="Toggle neon/light mode"></span>
       </label>
     </div>
     <header class="col-12 marahuyo-header text-center">
       <h1 class="marahuyo-logo">MaRaHUyO</h1>
       <!-- <h5>Isang lugar kung saan may kalayaan kang ipahayag ang gusto mong sabihin katotohanan man o kalokohan.</h5> -->
-      <marquee behavior="scroll" class="marahuyo-tagline" direction="left">Isang lugar kung saan may kalayaan kang ipahayag ang gusto mong sabihin katotohanan man o kalokohan.</marquee>
+      <marquee behavior="scroll" class="marahuyo-tagline" direction="left">Isang lugar kung saan may kalayaan kang ipahayag ang gusto mong sabihin katotohanan man o kasinungalingan. Isang lugar
+        kung saan may kalayaan kang ipahayag ang gusto mong sabihin katotohanan man o kasinungalingan.</marquee>
     </header>
+
     <hr class="header-divider">
     <article class="blog-post col-12">
       <p class="col-12 text-center date-post mb-0">Tues - 10.13.18</p>
       <h5 class="col-12 text-center title-post">Web Design Flow</h5>
       <img class="img-fluid" src="http://placekitten.com/1000/900" alt="">
     </article>
+
     <hr class="blogpost-divider">
     <article class="blog-post col-12">
-      <p class="col-12 text-center date-post mb-0">Tues - 10.13.18</p>
-      <h5 class="col-12 text-center title-post">Web Design Flow</h5>
+      <p class="col-12 text-center date-post mb-0">Weds - 10.14.18</p>
+      <h5 class="col-12 text-center title-post">Serif vs Sans Serif</h5>
       <img class="img-fluid" src="http://placekitten.com/1000/900" alt="">
     </article>
+
+    <hr class="blogpost-divider">
+    <article class="blog-post col-12">
+      <p class="col-12 text-center date-post mb-0">Tues - 10.16.18</p>
+      <h5 class="col-12 text-center title-post">Brainstorming Process</h5>
+      <img class="img-fluid" src="http://placekitten.com/1000/900" alt="">
+    </article>
+
     <hr class="blogpost-divider">
     <article class="blog-post col-12">
       <p class="col-12 text-center date-post mb-0">Tues - 10.13.18</p>
-      <h5 class="col-12 text-center title-post">Web Design Flow</h5>
+      <h5 class="col-12 text-center title-post">Work Place tips</h5>
       <img class="img-fluid" src="http://placekitten.com/1000/900" alt="">
     </article>
 
@@ -70,28 +82,14 @@
       </li>
     </ul>
   </nav>
-  <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
   <script>
-    function toggleDarkLight() {
+    function toggleNeonLight() {
       var body = document.getElementById("body");
       var currentClass = body.className;
-      body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+      body.className = currentClass == "neon-mode" ? "light-mode" : "neon-mode";
     }
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

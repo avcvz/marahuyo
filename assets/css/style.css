@@ -59,30 +59,30 @@ li a {
   border-color: #F50CA0;
 }
 
-body.dark-mode {
+body.neon-mode {
   background-color: #F9F940;
 }
-body.dark-mode .navbar-color {
+body.neon-mode .navbar-color {
   background-color: #F50CA0;
   color: #F9F940;
 }
-body.dark-mode li a {
+body.neon-mode li a {
   color: #F9F940;
   font-family: "Josefin Sans", Georgia, sans-serif;
 }
-body.dark-mode .marahuyo-logo {
+body.neon-mode .marahuyo-logo {
   color: #F50CA0;
 }
-body.dark-mode .header-divider {
+body.neon-mode .header-divider {
   border-color: red;
 }
-body.dark-mode .date-post {
+body.neon-mode .date-post {
   color: #3e4140;
 }
-body.dark-mode .title-post {
+body.neon-mode .title-post {
   color: #3e4140;
 }
-body.dark-mode .blogpost-divider {
+body.neon-mode .blogpost-divider {
   border-color: #F50CA0;
 }
 

@@ -241,8 +241,19 @@ input:checked+.slider:before {
   }
   .title-post-anon {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: $headline-font;
+    font-weight: 500;
+  }
+  .title-post-support {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    font-family: $text-font;
+    font-weight: 300;
+    color: gray;
+  }
+  .blog-post-article-mobile {
+    margin-top: 40px;
   }
 }
 
